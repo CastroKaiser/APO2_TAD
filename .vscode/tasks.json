@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build lista.c",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${fileDirname}\\lista.c",
+                "${fileDirname}\\main.c",
+                "-o",
+                "${fileDirname}\\lista.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/c"]
+                }
+            }
+        }
+    ]
+}
